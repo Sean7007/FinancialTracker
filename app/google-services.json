@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "1981442142",
+    "project_id": "financetracker-2e12a",
+    "storage_bucket": "financetracker-2e12a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1981442142:android:ab521cc0fbfbca2349accf",
+        "android_client_info": {
+          "package_name": "com.desperdartos.financialtracker"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1981442142-k3rcpjdoq5ib6ceptumav9bgcul7b0oi.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.desperdartos.financialtracker",
+            "certificate_hash": "78ee16883ef1188dd9f872be4c432aba1af7f32b"
+          }
+        },
+        {
+          "client_id": "1981442142-ig6538c9trabt7tc5lk726nnf32c9h6r.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDpxDu1NmbujCjhY4yPSDHaN3CEOKLt2iI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1981442142-ig6538c9trabt7tc5lk726nnf32c9h6r.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
