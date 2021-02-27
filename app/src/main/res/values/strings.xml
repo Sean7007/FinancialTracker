@@ -11,7 +11,7 @@
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
 
     <string-array name="items">
-        <item>"Select Item"</item>
+        <item>"^Select Item"</item>
         <item>"Transport"</item>
         <item>"Food"</item>
         <item>"House"</item>

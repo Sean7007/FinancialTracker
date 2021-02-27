@@ -32,7 +32,7 @@
             android:gravity="center"
             android:entries="@array/items"
             android:layout_gravity="center"
-            android:background="#b0e3a6">
+            android:background="#7d9ac9">
         </Spinner>
 
         <EditText
