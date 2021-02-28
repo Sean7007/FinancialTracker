@@ -5,33 +5,57 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:layout_margin="20dp"
     tools:context=".RegistrationActivity">
 
     <ImageView
         android:layout_width="200dp"
         android:layout_height="200dp"
+        android:layout_gravity="center"
         android:src="@drawable/applogo1"/>
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="25dp"
+        android:background="@drawable/bgimage1">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="27sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/ubuntu"
+            android:paddingLeft="2dp"
+            android:paddingRight="2dp"
+            android:layout_margin="5dp"
+            android:text="SIGN UP"
+            android:gravity="center"/>
     <EditText
         android:id="@+id/email"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Enter Email"
         android:layout_margin="20dp"
+        android:background="@drawable/cart_card"
+        android:drawableStart="@drawable/ic_email_purple"
+        android:fontFamily="@font/ubuntu"
         android:textColor="#000"
-        android:textSize="20sp"
-        android:textColorHint="#000"/>
+        android:textSize="25sp"
+        android:textColorHint="#c9c9c9"/>
 
     <EditText
         android:id="@+id/password"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Enter Password"
+        android:drawableStart="@drawable/ic_lock_purple"
+        android:fontFamily="@font/ubuntu"
+        android:background="@drawable/cart_card"
         android:layout_margin="20dp"
         android:textColor="#000"
-        android:textSize="20sp"
-        android:textColorHint="#000"/>
+        android:textSize="25sp"
+        android:textColorHint="#c9c9c9"/>
 
     <Button
         android:id="@+id/registerBtn"
@@ -40,13 +64,18 @@
         android:layout_margin="20dp"
         android:textAllCaps="false"
         android:gravity="center"
-        android:text="Register!"/>
+        android:fontFamily="@font/ubuntu"
+        android:background="@drawable/cart_card"
+        android:text="Sign Up!"/>
 
     <TextView
         android:id="@+id/registerQn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:fontFamily="@font/ubuntu"
+        android:textStyle="bold"
         android:text="Have an account? Log in Here."
         android:gravity="center"/>
+    </LinearLayout>
 
 </LinearLayout>

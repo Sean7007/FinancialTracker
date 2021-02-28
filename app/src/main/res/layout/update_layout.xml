@@ -3,6 +3,7 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/cart_card"
     android:orientation="vertical"
     android:layout_margin="10dp">
 
@@ -26,7 +27,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Enter Amount"
-        android:textColorHint="#000"
+        android:fontFamily="@font/poppins"
+        android:textColorHint="#9F000000"
         android:inputType="number"
         android:id="@+id/amount"
         android:textColor="#000"/>
@@ -34,7 +36,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Enter Note"
-        android:textColorHint="#000"
+        android:fontFamily="@font/poppins"
+        android:textColorHint="#9F000000"
         android:inputType="textCapSentences"
         android:id="@+id/note"
         android:textColor="#000"/>
