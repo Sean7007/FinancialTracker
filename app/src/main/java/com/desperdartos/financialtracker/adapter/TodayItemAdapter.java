@@ -1,4 +1,4 @@
-package com.desperdartos.financialtracker;
+package com.desperdartos.financialtracker.adapter;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -14,6 +14,8 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AlertDialog;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.desperdartos.financialtracker.Data;
+import com.desperdartos.financialtracker.R;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.FirebaseAuth;
@@ -23,6 +25,7 @@ import com.google.firebase.database.FirebaseDatabase;
 import org.joda.time.DateTime;
 import org.joda.time.Months;
 import org.joda.time.MutableDateTime;
+import org.joda.time.Weeks;
 
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
@@ -141,9 +144,10 @@ public class TodayItemAdapter extends RecyclerView.Adapter<TodayItemAdapter.View
                 MutableDateTime epoch = new MutableDateTime();
                 epoch.setDate(0);
                 DateTime now = new DateTime();
+                Weeks weeks = Weeks.weeksBetween(epoch, now);
                 Months months = Months.monthsBetween(epoch, now);
 
-                Data data = new Data(item, date, post_key, note, amount, months.getMonths());
+                Data data = new Data(item, date, post_key, note, amount, months.getMonths(),weeks.getWeeks());
                 DatabaseReference reference = FirebaseDatabase.getInstance().getReference("expenses").child(FirebaseAuth.getInstance().getCurrentUser().getUid());
                 reference.child(post_key).setValue(data).addOnCompleteListener(new OnCompleteListener<Void>() {
                     @Override
